@@ -1,0 +1,10 @@
+use myStore;
+
+CREATE TABLE product(
+
+id INT unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY UNIQUE,
+name VARCHAR(60) NOT NULL UNIQUE,
+manufacturer VARCHAR(60) NOT NULL,
+quantity TINYINT;
+
+);
