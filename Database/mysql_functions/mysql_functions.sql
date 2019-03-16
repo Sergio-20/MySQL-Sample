@@ -1,6 +1,6 @@
-SELECT COUNT(*) FROM myStore.users WHERE f_name = '%J%';
+SELECT COUNT(*) FROM myStore.users WHERE f_name LIKE '%J%';
 
-SELECT COUNT(DISTINCT username) FROM myStore.users WHERE username = "%J%" AND id > 1;
+SELECT COUNT(DISTINCT username) FROM myStore.users WHERE username LIKE '%J%' AND id > 1;
 
 SELECT MIN(quantity) FROM myStore.products;
 
