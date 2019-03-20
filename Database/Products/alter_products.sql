@@ -1,4 +1,4 @@
-use myStore;
+use myStore.Products;
 
 ALTER TABLE product RENAME TO products;
 

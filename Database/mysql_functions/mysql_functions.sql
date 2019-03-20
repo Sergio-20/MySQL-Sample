@@ -1,3 +1,6 @@
+use myStore.Products;
+use myStore.Users;
+
 SELECT COUNT(*) FROM myStore.users WHERE f_name LIKE '%J%';
 
 SELECT COUNT(DISTINCT username) FROM myStore.users WHERE username LIKE '%J%' AND id > 1;

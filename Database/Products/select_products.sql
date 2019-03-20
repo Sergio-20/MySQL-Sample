@@ -1,8 +1,8 @@
-SELECT * FROM myStore.users WHERE f_name LIKE '%J%';
+SELECT * FROM myStore.Users.users WHERE f_name LIKE '%J%';
 
-SELECT * FROM myStore.users WHERE f_name NOT LIKE '%oe%';
+SELECT * FROM myStore.Users.users WHERE f_name NOT LIKE '%oe%';
 
-SELECT * FROM myStore.products WHERE name = 'shoes' AND quantity > 10;
+SELECT * FROM myStore.Products.products WHERE name = 'shoes' AND quantity > 10;
 
 SELECT f_name,
     CASE
@@ -11,4 +11,4 @@ SELECT f_name,
       ELSE 'WHO ARE YOU?'
     END AS name_detector;
 
-SELECT name FROM myStore.products WHERE name IN('adidas','nike');
+SELECT name FROM myStore.Products.products WHERE name IN('adidas','nike');
